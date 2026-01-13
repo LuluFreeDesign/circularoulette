@@ -1,14 +1,14 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import wheelBg from "circularoulette/src/asset/f7d057cb466662ed0ddabd1d2e04b69c99e0bf0d.png";
-import caVaOuImg from "circularoulette/src/asset/beb8267362c4693d1b1421f7966c27af31c8b4b5.png";
-import bonPlanImg from "circularoulette/src/asset/4bdf10f7341b556e2379fb2e2be9eaa2be4d1c23.png";
-import etCaRepartImg from "circularoulette/src/asset/a6bc7752a367206b9e9cd64f4c894bdacc2fd319.png";
-import challengeImg from "circularoulette/src/asset/ad998f0abcf9f1ea6d1230c158c3cf7aaaaf533b.png";
-import jAgisImg from "circularoulette/src/asset/8483358a2a40fbc031cd63fde31042dc703c5e1e.png";
-import maConsoImg from "circularoulette/src/asset/a3b96f3a8adf8bb0039e500023e4b00b44a69a4d.png";
-import mystereImg from "circularoulette/src/asset/259a3d7fe1600591fd6988b6539df8deaf560504.png";
-import onEnParleImg from "circularoulette/src/asset/1892438245813fa8869d6842cca9464445a729e6.png";
+import wheelBg from "circularoulette/src/assets/f7d057cb466662ed0ddabd1d2e04b69c99e0bf0d.png";
+import caVaOuImg from "circularoulette/src/assets/beb8267362c4693d1b1421f7966c27af31c8b4b5.png";
+import bonPlanImg from "circularoulette/src/assets/4bdf10f7341b556e2379fb2e2be9eaa2be4d1c23.png";
+import etCaRepartImg from "circularoulette/src/assets/a6bc7752a367206b9e9cd64f4c894bdacc2fd319.png";
+import challengeImg from "circularoulette/src/assets/ad998f0abcf9f1ea6d1230c158c3cf7aaaaf533b.png";
+import jAgisImg from "circularoulette/src/assets/8483358a2a40fbc031cd63fde31042dc703c5e1e.png";
+import maConsoImg from "circularoulette/src/assets/a3b96f3a8adf8bb0039e500023e4b00b44a69a4d.png";
+import mystereImg from "circularoulette/src/assets/259a3d7fe1600591fd6988b6539df8deaf560504.png";
+import onEnParleImg from "circularoulette/src/assets/1892438245813fa8869d6842cca9464445a729e6.png";
 
 interface WheelProps {
   onCategorySelected: (category: string) => void;
