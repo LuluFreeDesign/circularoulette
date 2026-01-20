@@ -153,7 +153,7 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
       
       {/* Instructions */}
       <p className="text-center text-base md:text-lg text-gray-700" aria-live="polite">
-        {isSpinning ? "La roue tourne..." : "Cliquez au centre pour tourner la roue !"}
+        {isSpinning ? "La roue tourne..." : "Cliquez au centre pour tourner la CirculaRoulette !"}
       </p>
     </div>
   );
