@@ -213,7 +213,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Le réparer pour en prolonger l'usage",
       ],
       correctAnswer: 3,
-      hint: "Rendez-vous par ici ! [par ici](https://www.zerowastefrance.org/hierarchie-modes-traitement-dechets-juridictions-jurisprudence-application/)",
+      hint: "Rendez-vous par ici ! [par ici](https://www.zerowastefrance.org/hierarchie-modes-traitement-dechets-juridictions-jurisprudence-application/?utm_campaign=circularoulette_enligne)",
       explanation: "Il existe une \"hiérarchie des modes de traitement des déchets\" qui nous permet de savoir quelle est la meilleure \"deuxième vie\"  pour un objet et lui éviter au maximum de passer par la case déchet ! Avant qu'il ne devienne un déchet on peut réparer l'objet soi-même, chez un réparateur agréé, ou dans un repair café. En cas de doute, le site [Que faire de mes objets & déchets](https://quefairedemesdechets.ademe.fr/?utm_campaign=circularoulette_enligne) est un bon réflexe à prendre.",
       source: "ADEME"
     },
@@ -244,7 +244,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Bientôt 2 500 !",
       ],
       correctAnswer: 2,
-      hint: "Rendez-vous par ici ! [par ici](https://www.repaircafe.org/fr/)",
+      hint: "Rendez-vous par ici ! [par ici](https://www.repaircafe.org/fr/?utm_campaign=circularoulette_enligne)",
       explanation: "350 en France et 3600 dans le monde (sans compter ceux non affiliés). Si vous aimez réparer et transmettre, vous pouvez vous aussi être accompagné pour monter un Repair'café associatif. Quand vous cherchez des points de réparation de petit électroménager sur le site [Que faire de mes objets et déchets](https://quefairedemesdechets.ademe.fr/categories/petit-electromenager/?utm_campaign=circularoulette_enligne), les repair cafés sont systématiquement affichés !",
       source: "Réparation"
     },
@@ -258,8 +258,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) 850",
       ],
       correctAnswer: 1,
-      hint: "rendez-vous par ici ! [par ici](https://www.boites-a-livres.fr/)",
-      explanation: "Il y a plus de 16 000 boites de partages de livres en France. La majorité a été installée par l'association Recyclivre, et leur projet [Boite-à-Lire](https://www.boite-a-lire.com/). Pour faciliter le don de livres, Recyclivre nous a partagé leur liste qui peut se retrouver sur la page Livres de [Que faire de mes objets et déchets](https://quefairedemesdechets.ademe.fr/categories/livres/?utm_campaign=circularoulette_enligne), aux côtés des ressourceries généralistes et autres librairies d'occasion. Bonnes lectures !",
+      hint: "rendez-vous par ici ! [par ici](https://www.boites-a-livres.fr/?utm_campaign=circularoulette_enligne)",
+      explanation: "Il y a plus de 16 000 boites de partages de livres en France. La majorité a été installée par l'association Recyclivre, et leur projet [Boite-à-Lire](https://www.boite-a-lire.com/?utm_campaign=circularoulette_enligne). Pour faciliter le don de livres, Recyclivre nous a partagé leur liste qui peut se retrouver sur la page Livres de [Que faire de mes objets et déchets](https://quefairedemesdechets.ademe.fr/categories/livres/?utm_campaign=circularoulette_enligne), aux côtés des ressourceries généralistes et autres librairies d'occasion. Bonnes lectures !",
       source: "ADEME"
     },
     {
@@ -273,7 +273,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 3,
       hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/dechet/megot-de-cigarette/?utm_campaign=circularoulette_enligne)",
-      explanation: "Un mégot peut polluer jusqu'à 500 litres d'eau, et mettre jusqu'à 10 ans à se décomposer. Pour le jeter, pas besoin d'attendre une poubelle dédiée, il suffit de l'éteindre et de le mettre à la poubelle grise des ordures ménagères. Plus d'infos [par ici](https://monmegotouilfaut.fr/)",
+      explanation: "Un mégot peut polluer jusqu'à 500 litres d'eau, et mettre jusqu'à 10 ans à se décomposer. Pour le jeter, pas besoin d'attendre une poubelle dédiée, il suffit de l'éteindre et de le mettre à la poubelle grise des ordures ménagères. Plus d'infos [par ici](https://monmegotouilfaut.fr/?utm_campaign=circularoulette_enligne)",
       source: "ADEME"
     }
   ],
@@ -289,7 +289,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Upcycling",
       ],
       correctAnswer: 1,
-      hint: "Rendez-vous par ici ! ( lien vers https://observatoire-reemploi-reutilisation.ademe.fr/comprendre-le-reemploi )",
+      hint: "Rendez-vous par ici ! ( lien vers https://observatoire-reemploi-reutilisation.ademe.fr/comprendre-le-reemploi?utm_campaign=circularoulette_enligne )",
       explanation: "Recyclage : récupération des matières qui composent l'objet (cela nécessite de l'énergie et de l'eau)\nRéemploi : c'est quand l'objet garde son usage et change de propriétaire\nRéparation : c'est quand l'objet est conservé par son propriétaire et réparé pour le rendre à nouveau fonctionnel \nUpcycling : une forme de recyclage ou de réutilisation qui ajoute de la valeur à l'objet et parfois le change d'usage (ex : salon de jardin en palettes) \nSi vous ne faites pas la même taille de vêtements que vos amis, vous pouvez retrouver les boutiques de seconde main autour de chez vous [ici](https://quefairedemesobjets.ademe.fr/seconde-main/?utm_campaign=circularoulette_enligne)",
       source: "Textile"
     },
@@ -303,7 +303,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) 660€",
       ],
       correctAnswer: 3,
-      hint: "Rendez-vous par ici ! [par ici](https://infos.ademe.fr/magazine-mai-2022/faits-et-chiffres/equipements-domestiques-comment-prolonger-leur-duree-de-vie/)",
+      hint: "Rendez-vous par ici ! [par ici](https://infos.ademe.fr/magazine-mai-2022/faits-et-chiffres/equipements-domestiques-comment-prolonger-leur-duree-de-vie/?utm_campaign=circularoulette_enligne)",
       explanation: "Prolonger d'un an la durée d'usage de ses équipements plutôt que de les remplacer par du neuf permettrait d'économiser 660 € par an. Pour trouver comment prolonger la vie de ses équipements, rdv [ici](https://quefairedemesobjets.ademe.fr/?utm_campaign=circularoulette_enligne)",
       source: "Numérique"
     },
@@ -317,7 +317,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) C'est une aide qui n'est jamais entrée en vigueur",
       ],
       correctAnswer: 2,
-      hint: "Rendez-vous par ici !  lien vers https://www.bonusreparation.org/",
+      hint: "Rendez-vous par ici !  lien vers https://www.bonusreparation.org/?utm_campaign=circularoulette_enligne",
       explanation: "Depuis 2023, TOUT le monde peut bénéficier du Bonus Réparation ! Il s'agit d'un montant déduit directement de votre facture (votre produit doit avoir été réparé chez un réparateur labellisé). Pour en savoir plus et découvrir chez qui vous rendre, rdv [ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
       source: "Réparation"
     },
@@ -415,7 +415,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) 2 ans",
       ],
       correctAnswer: 1,
-      hint: "Rendez-vous par ici ! [par ici](https://librairie.ademe.fr/economie-circulaire-et-dechets/4084-etude-prealable-a-la-mise-en-place-de-la-filiere-rep-jouets.html)",
+      hint: "Rendez-vous par ici ! [par ici](https://librairie.ademe.fr/economie-circulaire-et-dechets/4084-etude-prealable-a-la-mise-en-place-de-la-filiere-rep-jouets.html?utm_campaign=circularoulette_enligne)",
       explanation: "La durée d'usage d'un jouet est en moyenne de 8 mois alors qu'il pourrait être utilisé bien plus longtemps (sa durée de vie est plus longue que sa durée d'usage). En France, 100 000 tonnes de jouets sont jetés chaque année ! Il existe aujourd'hui la possibilité d'acheter ou de louer des jouets, les bons gestes ça s'apprend dès le début ! Pour trouver où déposer les jouets qui dorment chez vous, c'est [par ici](https://quefairedemesdechets.ademe.fr/dechet/jouet-educatif/?utm_campaign=circularoulette_enligne) !",
       source: "Jouet"
     },
@@ -429,7 +429,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Les trois-quarts",
       ],
       correctAnswer: 2,
-      hint: "Rendez-vous par ici ! [par ici](https://librairie.ademe.fr/economie-circulaire-et-dechets/4084-etude-prealable-a-la-mise-en-place-de-la-filiere-rep-jouets.html)",
+      hint: "Rendez-vous par ici ! [par ici](https://librairie.ademe.fr/economie-circulaire-et-dechets/4084-etude-prealable-a-la-mise-en-place-de-la-filiere-rep-jouets.html?utm_campaign=circularoulette_enligne)",
       explanation: "Oui, la moitié. \nIl existe aujourd'hui la possibilité d'acheter de seconde main, ou de louer des jouets, les bons gestes ça s'apprend dès le début ! \nPour leur donner une seconde vie, rendez-vous [par ici](https://quefairedemesdechets.ademe.fr/dechet/jouet-educatif/?utm_campaign=circularoulette_enligne) et attention, il ne faut surtout pas les déposer dans la poubelle jaune.",
       source: "Jouet"
     },
