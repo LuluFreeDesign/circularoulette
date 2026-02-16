@@ -3,9 +3,9 @@ import { Wheel } from "./components/Wheel";
 import { Quiz } from "./components/Quiz";
 import { quizDataByCategory } from "./data/quizData";
 
-// Catégories actives pour le quiz (exclure "et ça repart !" et "mystère !!")
+// Catégories actives pour le quiz (exclure "et ça repart !", "mystère !!", "on en parle !?" et "en train !!!")
 const quizCategories = Object.keys(quizDataByCategory).filter(
-  (cat) => cat !== "et ça repart !" && cat !== "mystère !!"
+  (cat) => cat !== "et ça repart !" && cat !== "mystère !!" && cat !== "on en parle !?" && cat !== "en train !!!"
 );
 
 export default function App() {
