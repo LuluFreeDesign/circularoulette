@@ -1,6 +1,6 @@
-# CirculaRoulette en ligne - Quiz Economie Circulaire x SNCF
+# CirculaRoulette en ligne - Quiz Economie Circulaire
 
-Application React interactive de quiz sur l'economie circulaire, adaptee de la roue physique CirculaRoulette pour un partenariat SNCF, dans le cadre des **Journees Nationales du Recyclage - Mars 2026**.
+Application React interactive de quiz sur l'economie circulaire, adaptee de la roue physique CirculaRoulette, dans le cadre des **Journees Nationales du Recyclage - Mars 2026**. Solution en marque blanche, personnalisable et integrable en iframe.
 
 ## Description
 
@@ -28,7 +28,7 @@ La roue comporte 8 segments :
 | **Mystere !!** | Tire une question au hasard dans une categorie aleatoire |
 | *(8e segment)* | Reserve pour une future categorie |
 
-## Palette SNCF
+## Palette de couleurs
 
 | Usage | Couleurs |
 |---|---|
@@ -125,4 +125,4 @@ circularoulette/
 
 ## Licence
 
-Projet developpe pour les Journees Nationales du Recyclage 2026, en partenariat avec la SNCF.
+Projet developpe pour les Journees Nationales du Recyclage 2026.
