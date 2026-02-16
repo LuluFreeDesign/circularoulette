@@ -83,13 +83,12 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
   return (
     <div className="relative flex flex-col items-center gap-6">
       {/* Flèche indicatrice au-dessus de la roue */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center justify-center">
         <div 
           className="w-[40px] h-[30px] bg-[#e8854a]"
           style={{ clipPath: "polygon(50% 100%, 0% 0%, 100% 0%)" }}
           aria-hidden="true"
         />
-        <div className="w-3 h-3 rounded-full bg-[#00b388]" aria-hidden="true" />
       </div>
       
       {/* Conteneur de la roue */}
