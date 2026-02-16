@@ -1,163 +1,128 @@
-# 🌍 CirculaRoulette - Quiz Économie Circulaire
+# CirculaRoulette en ligne - Quiz Economie Circulaire x SNCF
 
-Application React interactive de quiz sur l'économie circulaire pour les **Journées Nationales du Recyclage 2026**.
+Application React interactive de quiz sur l'economie circulaire, adaptee de la roue physique CirculaRoulette pour un partenariat SNCF, dans le cadre des **Journees Nationales du Recyclage - Mars 2026**.
 
-## 📋 Description
+## Description
 
-CirculaRoulette est une version numérique interactive de la roue physique CirculaRoulette. Elle permet aux utilisateurs de :
-- 🎡 Faire tourner une roue à 8 catégories
-- 📝 Répondre à des questions sur l'économie circulaire
-- 📚 Découvrir des explications pédagogiques après chaque réponse
-- 🎁 Participer à un jeu concours pour gagner des lots éco-responsables
+CirculaRoulette est une version numerique de la roue physique existante. Les utilisateurs font tourner une roue a 8 segments, puis repondent a des questions pedagogiques sur le tri, la reparation, le reemploi et la consommation responsable.
 
-## ✨ Fonctionnalités
+- Roue interactive a 8 segments avec animations fluides
+- 31 questions reparties sur 5 categories actives
+- Systeme de deck (melange Fisher-Yates) garantissant zero doublon
+- Support du mode multi-reponses (questions id 32, 65, 53)
+- Explications pedagogiques avec liens cliquables vers quefairedemesdechets.ademe.fr
+- Integrable en iframe avec auto-resize via postMessage
 
-- ✅ 73 questions réparties sur 8 catégories
-- ✅ Interface responsive (mobile & desktop)
-- ✅ Animations fluides avec Motion (Framer Motion)
-- ✅ Design accessible avec couleurs contrastées
-- ✅ Éco-conception et optimisation des performances
-- ✅ Intégrable en iframe dans un site Wagtail
+## Categories
 
-## 🎨 Couleurs officielles
+La roue comporte 8 segments :
 
-- **Orange** : #F2793D
-- **Bleu-vert** : #2B8A99
+| Segment | Comportement |
+|---|---|
+| **Ca va ou ?** | Questions sur le tri et la destination des dechets |
+| **J'agis !!** | Actions concretes (reparation, don, reemploi) |
+| **Challenge !!!** | Defis et questions chiffrees |
+| **Bon plan** | Bonus reparation, seconde main, astuces |
+| **Ma conso** | Consommation responsable et duree de vie des objets |
+| **Et ca repart !** | Relance automatiquement la roue |
+| **Mystere !!** | Tire une question au hasard dans une categorie aleatoire |
+| *(8e segment)* | Reserve pour une future categorie |
 
-## 🚀 Installation
+## Palette SNCF
+
+| Usage | Couleurs |
+|---|---|
+| Claires | `#a4c8e1` `#a1d6ca` |
+| Normales | `#0084d4` `#00b388` |
+| Sombres | `#00205b` `#003865` `#154734` |
+| Mauvaise reponse | `#f8c1b8` `#f2827f` `#651c32` |
+| Typographie | Avenir |
+
+## Installation
 
 ```bash
-# Cloner le repository
 git clone https://github.com/LuluFreeDesign/circularoulette.git
-
-# Installer les dépendances
+cd circularoulette
 npm install
-
-# Lancer en mode développement
 npm run dev
 ```
 
-## 📦 Build
+## Build et deploiement
 
 ```bash
-# Créer un build de production
 npm run build
 ```
 
-Le dossier `dist/` contiendra tous les fichiers prêts à être déployés.
+Le dossier `dist/` contient les fichiers prets a deployer (Netlify, Vercel, ou tout hebergement statique).
 
-## 🌐 Déploiement
+## Integration iframe (Wagtail CMS)
 
-### Sur Netlify (recommandé)
-
-1. Créez un compte sur [Netlify](https://netlify.com)
-2. Connectez votre repository GitHub
-3. Configuration du build :
-   - **Build command** : `npm run build`
-   - **Publish directory** : `dist`
-4. Déployez !
-
-### Sur Vercel
-
-1. Connectez votre repository à [Vercel](https://vercel.com)
-2. Vercel détectera automatiquement la configuration
-3. Déployez !
-
-## 🔗 Intégration iframe dans Wagtail
+L'application envoie sa hauteur au parent via `postMessage` pour un auto-resize fluide. Cote Wagtail, ajouter dans le template :
 
 ```html
 <div style="max-width: 900px; margin: 40px auto; padding: 0 20px;">
-  <iframe 
-    src="https://votre-url-deployee.com" 
-    width="100%" 
-    height="700" 
+  <iframe
+    id="circularoulette"
+    src="https://votre-url-deployee.com"
+    width="100%"
+    height="900"
     frameborder="0"
     scrolling="no"
-    title="CirculaRoulette - Quiz économie circulaire"
+    title="CirculaRoulette - Quiz economie circulaire"
     style="border: none; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);"
   ></iframe>
 </div>
+
+<script>
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'resize') {
+      document.getElementById('circularoulette').style.height = e.data.height + 'px';
+    }
+  });
+</script>
 ```
 
-Consultez [WAGTAIL_INTEGRATION.md](./WAGTAIL_INTEGRATION.md) pour plus de détails.
-
-## 📚 Documentation
-
-- [Guide de déploiement simple](./GUIDE_DEPLOIEMENT_SIMPLE.md) - Pour les non-développeurs
-- [Guide pour non-développeurs](./GUIDE_POUR_NON_DEVELOPPEURS.md) - Tutoriel pas à pas
-- [Intégration Wagtail](./WAGTAIL_INTEGRATION.md) - Configuration détaillée
-- [Guide d'intégration](./GUIDE_INTEGRATION.md) - Instructions techniques
-- [Intégration iframe](./INTEGRATION_IFRAME.md) - Code iframe simple
-
-## 🏗️ Structure du projet
+## Structure du projet
 
 ```
 circularoulette/
 ├── src/
 │   ├── app/
-│   │   ├── App.tsx                    # Composant principal
+│   │   ├── App.tsx                 # Composant principal + logique iframe postMessage
 │   │   ├── components/
-│   │   │   ├── Wheel.tsx              # Roue interactive
-│   │   │   ├── Quiz.tsx               # Composant de quiz
-│   │   │   └── ui/                    # Composants UI (shadcn/ui)
+│   │   │   ├── Wheel.tsx           # Roue interactive (8 segments, etiquettes PNG)
+│   │   │   └── Quiz.tsx            # Quiz, deck system, renderExplanation (liens markdown)
 │   │   └── data/
-│   │       └── quizData.ts            # Toutes les 73 questions
+│   │       └── quizData.ts         # 31 questions, interface Question (correctAnswer, hint)
+│   ├── assets/                     # Images de la roue et etiquettes categories
 │   ├── styles/
-│   │   ├── index.css                  # Import des styles
-│   │   ├── tailwind.css               # Configuration Tailwind v4
-│   │   └── theme.css                  # Thème personnalisé
-│   └── ...
+│   │   ├── fonts.css               # Import police Avenir
+│   │   ├── index.css               # Point d'entree styles
+│   │   ├── tailwind.css            # Configuration Tailwind v4
+│   │   └── theme.css               # Tokens de theme
+│   └── main.tsx                    # Point d'entree React
+├── index.html
 ├── package.json
 ├── vite.config.ts
 └── README.md
 ```
 
-## 🛠️ Technologies utilisées
+## Technologies
 
-- **React 18** - Framework UI
-- **TypeScript** - Typage statique
-- **Vite** - Build tool ultra-rapide
-- **Tailwind CSS v4** - Framework CSS utilitaire
-- **Motion** (Framer Motion) - Animations fluides
-- **Lucide React** - Icônes
-- **shadcn/ui** - Composants UI accessibles
+- **React 18** + **TypeScript**
+- **Vite** - Build tool
+- **Tailwind CSS v4** - Styles utilitaires
+- **Motion** - Animations (roue, transitions quiz)
+- **Lucide React** - Icones (check, croix)
 
-## 🎯 Catégories de questions
+## Points techniques notables
 
-1. **Ma conso** - Questions sur la consommation responsable
-2. **Bon plan** - Astuces et bons plans économie circulaire
-3. **Et ça repart !** - Relance la roue automatiquement
-4. **J'agis !!** - Actions concrètes à mettre en place
-5. **On en parle !?** - Sujets de discussion et débat
-6. **Ça va où ?** - Tri et destination des déchets
-7. **Mystère ???** - Question aléatoire surprise
-8. **Challenge !!!** - Défis et challenges écologiques
+- **Systeme de deck** : chaque categorie maintient un paquet de questions melange (Fisher-Yates). Aucune question n'est reposee tant que toutes celles de la categorie n'ont pas ete vues.
+- **Multi-reponses** : le champ `correctAnswer` accepte `number | number[]` pour les questions ou plusieurs reponses sont correctes.
+- **Liens dans les explications** : la fonction `renderExplanation` dans `Quiz.tsx` parse les liens markdown `[texte](url)` en hyperliens cliquables.
+- **UTM tracking** : tous les liens vers quefairedemesdechets.ademe.fr portent le parametre `?utm_campaign=circularoulette_enligne`.
+- **Options prefixees** : les choix de reponse sont prefixes A), B), C), D).
 
-## 🌱 Éco-conception
+## Licence
 
-Ce projet applique les principes de l'éco-conception :
-- Code optimisé et minifié
-- Images compressées
-- Lazy loading des ressources
-- Animations performantes
-- Accessibilité (WCAG AA)
-
-## 🎁 Jeu concours
-
-Après chaque bonne réponse, les utilisateurs peuvent participer à un jeu concours pour gagner des lots issus de l'économie circulaire (produits réparés, upcyclés, ou de seconde main).
-
-Le formulaire de participation est hébergé sur Tally : [https://tally.so/r/EklWLq](https://tally.so/r/EklWLq)
-
-## 📝 Licence
-
-Ce projet utilise :
-- Des composants de [shadcn/ui](https://ui.shadcn.com/) sous [licence MIT](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md)
-- Des photos d'[Unsplash](https://unsplash.com) sous [licence Unsplash](https://unsplash.com/license)
-
-## 👥 Contribution
-
-Ce projet a été développé pour les Journées Nationales du Recyclage 2026.
-
----
-
-**Bon recyclage ! ♻️🌱**
+Projet developpe pour les Journees Nationales du Recyclage 2026, en partenariat avec la SNCF.

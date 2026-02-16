@@ -1,15 +1,13 @@
-import React from "react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import wheelBg from "../../assets/f7d057cb466662ed0ddabd1d2e04b69c99e0bf0d.png";
-import caVaOuImg from "../../assets/ca-va-ou.jpg";
+import fondRouletteImg from "../../assets/f7d057cb466662ed0ddabd1d2e04b69c99e0bf0d.png";
 import bonPlanImg from "../../assets/bon-plan.jpg";
-import etCaRepartImg from "../../assets/et-ca-repart.jpg";
+import caVaOuImg from "../../assets/ca-va-ou.jpg";
 import challengeImg from "../../assets/challenge.jpg";
-import jAgisImg from "../../assets/j-agis.jpg";
+import etCaRepartImg from "../../assets/et-ca-repart.jpg";
+import jagisImg from "../../assets/j-agis.jpg";
 import maConsoImg from "../../assets/ma-conso.jpg";
 import mystereImg from "../../assets/mystere.jpg";
-import onEnParleImg from "../../assets/on-en-parle.jpg";
 
 interface WheelProps {
   onCategorySelected: (category: string) => void;
@@ -22,22 +20,21 @@ const categories = [
   "bon plan",
   "et ça repart !",
   "j'agis !!",
-  "on en parle !?",
+  "mystère !!",
   "ça va où ?",
-  "mystère ???",
-  "challenge !!!"
+  "challenge !!!",
+  "et ça repart !"
 ];
 
-// Images pour chaque catégorie (à compléter au fur et à mesure)
+// Images pour chaque catégorie
 const categoryImages: Record<string, string | null> = {
   "ma conso": maConsoImg,
   "bon plan": bonPlanImg,
   "et ça repart !": etCaRepartImg,
-  "j'agis !!": jAgisImg,
-  "on en parle !?": onEnParleImg,
+  "j'agis !!": jagisImg,
+  "mystère !!": mystereImg,
   "ça va où ?": caVaOuImg,
-  "mystère ???": mystereImg,
-  "challenge !!!": challengeImg
+  "challenge !!!": challengeImg,
 };
 
 export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelProps) {
@@ -86,10 +83,14 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
   return (
     <div className="relative flex flex-col items-center gap-6">
       {/* Flèche indicatrice au-dessus de la roue */}
-      <div 
-        className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[30px] border-t-[#F2793D]"
-        aria-hidden="true"
-      />
+      <div className="flex items-center gap-2">
+        <div 
+          className="w-[40px] h-[30px] bg-[#e8854a]"
+          style={{ clipPath: "polygon(50% 100%, 0% 0%, 100% 0%)" }}
+          aria-hidden="true"
+        />
+        <div className="w-3 h-3 rounded-full bg-[#00b388]" aria-hidden="true" />
+      </div>
       
       {/* Conteneur de la roue */}
       <div className="relative w-[340px] h-[340px] md:w-[500px] md:h-[500px]">
@@ -101,11 +102,9 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
           }}
           className="relative rounded-full overflow-hidden w-full h-full"
         >
-          <img 
-            src={wheelBg} 
-            alt="Roue de la CirculaRoulette avec 8 sections" 
-            className="w-full h-full rounded-full object-cover aspect-square"
-          />
+          <div className="w-full h-full">
+            <img src={fondRouletteImg} alt="" className="w-full h-full" aria-hidden="true" />
+          </div>
           
           {/* Images des catégories */}
           <div className="absolute inset-0">
@@ -122,7 +121,7 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
               
               return (
                 <div
-                  key={`img-${category}`}
+                  key={`img-${index}`}
                   className="absolute pointer-events-none"
                   style={{
                     left: "50%",
@@ -145,16 +144,16 @@ export function Wheel({ onCategorySelected, isSpinning, setIsSpinning }: WheelPr
         <button
           onClick={spinWheel}
           disabled={isSpinning}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-20 h-20 shadow-lg flex items-center justify-center transition-all hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-[#F2793D] focus:ring-opacity-50"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-20 h-20 shadow-lg flex items-center justify-center transition-all hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-[#0084d4]/50"
           aria-label={isSpinning ? "La roue tourne" : "Tourner la roue"}
         >
-          <span className="text-2xl" aria-hidden="true">↻</span>
+          <span className="text-2xl text-[#0084d4]" aria-hidden="true">↻</span>
         </button>
       </div>
       
       {/* Instructions */}
-      <p className="text-center text-base md:text-lg text-gray-700" aria-live="polite">
-        {isSpinning ? "La roue tourne..." : "Cliquez au centre pour tourner la CirculaRoulette !"}
+      <p className="text-center text-base md:text-lg text-[#00205b]" aria-live="polite">
+        {isSpinning ? "La roue tourne..." : "Cliquez au centre pour tourner la roue !"}
       </p>
     </div>
   );

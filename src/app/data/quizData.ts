@@ -56,7 +56,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "B) Possible, mais que dans le sens de la longueur",
         "C) Non, ça perturbe les chaines de tri",
       ],
-      correctAnswer: 2,
+      correctAnswer: [1, 2],
       hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/dechet/canette/?utm_campaign=circularoulette_enligne)",
       explanation: "De préférence non, mais si c'est nécessaire, les écraser dans le sens de la longueur. Au risque qu'elles ne soient pas recyclées, il est conseillé de ne pas les écraser ni les aplatir lors du tri (tout comme les bouteilles). Les canettes en acier, en aluminium, et les capsules métalliques sont récupérées séparément dans les centres de tri et regroupées en balles (paquets) en vue de leur recyclage. L'acier et l'aluminium sont ensuite lavés, broyés et fondus pour être réintégrés à la chaîne de production et fabriquer de nouveaux produits. En cas de doute, consultez la consigne sur [Que faire de mes déchets](https://quefairedemesobjets.ademe.fr/dechet/canette/?utm_campaign=circularoulette_enligne) !",
       source: "Emballages"
@@ -111,9 +111,9 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Je les lave s'ils sont sales",
         "D) Je ne les emboite pas et les laisse tels quels",
       ],
-      correctAnswer: 3,
-      hint: "Rendez-vous par ici ! [par ici](nouvelle page emballages)",
-      explanation: "Il n'y a pas besoin d'emboîter, ni de tasser, ni de laver. En général il faut les déposer tels quels dans le bac, mais dans certaines collectivités il faut les mettre dans un sac (jaune translucide en général).  En cas de doute sur la marche à suivre :",
+      correctAnswer: [1, 3],
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/dechet/boite-en-plastique-alimentaire-emballage/?utm_campaign=circularoulette_enligne)",
+      explanation: "Il n'y a pas besoin d'emboîter, ni de tasser, ni de laver. En général il faut les déposer tels quels dans le bac, mais dans certaines collectivités il faut les mettre dans un sac (jaune translucide en général). En cas de doute sur la marche à suivre, RDV sur [Que faire de mes déchets](https://quefairedemesdechets.ademe.fr/dechet/boite-en-plastique-alimentaire-emballage/?utm_campaign=circularoulette_enligne) !",
       source: "Emaballages"
     }
   ],
@@ -128,7 +128,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Commander de nouveaux verres à sa vue et les faire monter sur ses anciennes lunettes",
         "D) Trouver un opticien qui permet d'acheter 4 paires pour le prix d'une",
       ],
-      correctAnswer: 2,
+      correctAnswer: [1, 2],
       hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/dechet/lunettes/?utm_campaign=circularoulette_enligne)",
       explanation: "L'option la plus écologique est de monter de nouveaux verres sur votre monture actuelle.  \nSi la monture doit vraiment être changée, il est possible de déposer sa paire de lunettes dans une borne de collecte pour lui donner une seconde vie. \nTrouvez celle la plus proche de chez vous en renseignant votre adresse sur la [carte interactive](https://quefairedemesobjets.ademe.fr/dechet/lunettes/?utm_campaign=circularoulette_enligne) !",
       source: "Lunettes"
@@ -170,7 +170,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Je le jette et j'en rachète un nouveau plus à la mode",
         "D) Je le dépose dans un point de collecte de vêtements et j'en recherche un d'occasion",
       ],
-      correctAnswer: 0,
+      correctAnswer: [0, 1],
       hint: "Rendez-vous par ici !  ((lien vers [ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne) )",
       explanation: "Recoudre ou faire recoudre permettrait de prolonger la vie du manteau et d'éviter un déchet textile supplémentaire, surtout s'il est encore en bon état. Le bonus réparation pour réparer une doublure est compris entre 10€ et 25€ ! Découvrez les réparateurs agréés qui peuvent vous faire bénéficier du bonus sur la [carte interactive](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne), ou bien trouvez la retoucherie la plus proche de chez vous [ici](https://quefairedemesdechets.ademe.fr/dechet/vetements/?utm_campaign=circularoulette_enligne)",
       source: "Vetement"
@@ -259,7 +259,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       hint: "rendez-vous par ici ! [par ici](https://www.boites-a-livres.fr/?utm_campaign=circularoulette_enligne)",
-      explanation: "Il y a plus de 16 000 boites de partages de livres en France. La majorité a été installée par l'association Recyclivre, et leur projet [Boite-à-Lire](https://www.boite-a-lire.com/?utm_campaign=circularoulette_enligne). Pour faciliter le don de livres, Recyclivre nous a partagé leur liste qui peut se retrouver sur la page Livres de [Que faire de mes objets et déchets](https://quefairedemesdechets.ademe.fr/categories/livres/?utm_campaign=circularoulette_enligne), aux côtés des ressourceries généralistes et autres librairies d'occasion. Bonnes lectures !",
+      explanation: "Il y a plus de 16 000 boites de partages de livres en France. Recyclivre est à l'initiative du site [Boite-à-Lire](https://www.boite-a-lire.com/?utm_campaign=circularoulette_enligne), en plus d'en installer certaines directement. Pour faciliter le don de livres, Recyclivre nous a partagé leur liste qui peut se retrouver sur la page Livres de [Que faire de mes objets et déchets](https://quefairedemesdechets.ademe.fr/categories/livres/?utm_campaign=circularoulette_enligne), aux côtés des ressourceries généralistes et autres librairies d'occasion. Bonnes lectures !",
       source: "ADEME"
     },
     {
@@ -358,7 +358,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Je peux me rendre dans un Repair Café",
         "D) Je peux appeler un professionnel et bénéficier du Bonus Réparation",
       ],
-      correctAnswer: 0,
+      correctAnswer: [0, 1, 2, 3],
       hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
       explanation: "Toutes les options possibles en fonction de votre niveau de \"bricolage\" et votre temps. Le plus important c'est de prendre le réflexe ! Si vous optez pour l'option \"faire réparer par un professionnel\", rdv [ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
       source: "Réparation"
