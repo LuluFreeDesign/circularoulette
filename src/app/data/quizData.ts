@@ -432,20 +432,6 @@ export const quizDataByCategory: Record<string, Question[]> = {
       hint: "Rendez-vous par ici ! [par ici](https://librairie.ademe.fr/economie-circulaire-et-dechets/4084-etude-prealable-a-la-mise-en-place-de-la-filiere-rep-jouets.html?utm_campaign=circularoulette_enligne)",
       explanation: "Oui, la moitié. \nIl existe aujourd'hui la possibilité d'acheter de seconde main, ou de louer des jouets, les bons gestes ça s'apprend dès le début ! \nPour leur donner une seconde vie, rendez-vous [par ici](https://quefairedemesdechets.ademe.fr/dechet/jouet-educatif/?utm_campaign=circularoulette_enligne) et attention, il ne faut surtout pas les déposer dans la poubelle jaune.",
       source: "Jouet"
-    },
-    {
-      id: 19,
-      question: "Mon imprimante ne fonctionne plus, quel est le choix le plus (éco)logique ?",
-      options: [
-        "A) Vu le prix des imprimantes, je vais en acheter une neuve et ce sera réglé",
-        "B) Je cherche un réparateur et profite des 35€ du \"Bonus Réparation\"",
-        "C) Je vais essayer de la réparer au Repair Café près de chez moi",
-        "D) Je pense que finalement je n'ai pas vraiment besoin d'avoir ma propre imprimante",
-      ],
-      correctAnswer: 3,
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/dechet/imprimante/?utm_campaign=circularoulette_enligne)",
-      explanation: "Prolonger la durée de vie de ses objets c'est toujours le meilleur choix ! Partager et mutualiser nos équipements aussi, cela permet de réduire la consommation de nouvelles ressources, de faire des économies en utilisant juste ce dont on a besoin !\nVous pouvez trouver où faire réparer votre imprimante [ici](https://quefairedemesdechets.ademe.fr/dechet/imprimante/?utm_campaign=circularoulette_enligne) et même voir quels réparateurs vous permettent de bénéficier du bonus réparation !",
-      source: "Numérique"
     }
   ],
 
