@@ -44,8 +44,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Ils seront déposés en zone de réemploi",
       ],
       correctAnswer: 0,
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/dechet/vetements/?utm_campaign=circularoulette_enligne)",
-      explanation: "Pour qu'ils aient une seconde vie, les vêtements doivent obligatoirement être déposés dans un des points de collecte dédié (borne dans l'espace public, en magasin, dans une association). S'ils sont déposés dans la poubelle ménagère : si le bac est refusé (lors de la collecte), il reste sur le trottoir. En revanche, s'il est emmené et mélangé au reste des emballages, il peut entrainer le refus de la benne entière. Sur la chaîne, il peut entrainer le refus d'emballages et sera envoyé à l'incinérateur.\nPour trouver où déposer vos vêtements le plus proche de chez vous, cliquez juste ici et renseignez votre adresse dans la [carte interactive](https://quefairedemesdechets.ademe.fr/dechet/vetements/?utm_campaign=circularoulette_enligne) !",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/categories/vetements/?utm_campaign=circularoulette_enligne)",
+      explanation: "Pour qu'ils aient une seconde vie, les vêtements doivent obligatoirement être déposés dans un des points de collecte dédié (borne dans l'espace public, en magasin, dans une association). S'ils sont déposés dans la poubelle ménagère : si le bac est refusé (lors de la collecte), il reste sur le trottoir. En revanche, s'il est emmené et mélangé au reste des emballages, il peut entrainer le refus de la benne entière. Sur la chaîne, il peut entrainer le refus d'emballages et sera envoyé à l'incinérateur.\nPour trouver où déposer vos vêtements le plus proche de chez vous, cliquez juste ici et renseignez votre adresse dans la [carte interactive](https://quefairedemesdechets.ademe.fr/categories/vetements/?utm_campaign=circularoulette_enligne) !",
       source: "Vetements"
     },
     {
@@ -57,8 +57,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Non, ça perturbe les chaines de tri",
       ],
       correctAnswer: [1, 2],
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/dechet/canette/?utm_campaign=circularoulette_enligne)",
-      explanation: "De préférence non, mais si c'est nécessaire, les écraser dans le sens de la longueur. Au risque qu'elles ne soient pas recyclées, il est conseillé de ne pas les écraser ni les aplatir lors du tri (tout comme les bouteilles). Les canettes en acier, en aluminium, et les capsules métalliques sont récupérées séparément dans les centres de tri et regroupées en balles (paquets) en vue de leur recyclage. L'acier et l'aluminium sont ensuite lavés, broyés et fondus pour être réintégrés à la chaîne de production et fabriquer de nouveaux produits. En cas de doute, consultez la consigne sur [Que faire de mes déchets](https://quefairedemesobjets.ademe.fr/dechet/canette/?utm_campaign=circularoulette_enligne) !",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/categories/emballages/emballages-en-metal/?utm_campaign=circularoulette_enligne)",
+      explanation: "De préférence non, mais si c'est nécessaire, les écraser dans le sens de la longueur. Au risque qu'elles ne soient pas recyclées, il est conseillé de ne pas les écraser ni les aplatir lors du tri (tout comme les bouteilles). Les canettes en acier, en aluminium, et les capsules métalliques sont récupérées séparément dans les centres de tri et regroupées en balles (paquets) en vue de leur recyclage. L'acier et l'aluminium sont ensuite lavés, broyés et fondus pour être réintégrés à la chaîne de production et fabriquer de nouveaux produits. En cas de doute, consultez la consigne sur [Que faire de mes déchets](https://quefairedemesdechets.ademe.fr/categories/emballages/emballages-en-metal/?utm_campaign=circularoulette_enligne) !",
       source: "Emballages"
     },
     {
@@ -70,8 +70,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "C) Je les dépose en pharmacie après avoir mis la boîte et la notice au tri",
       ],
       correctAnswer: 2,
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/dechet/medicaments/?utm_campaign=circularoulette_enligne)",
-      explanation: "Pour trouver la pharmacie la plus proche de chez vous pour déposer vos médicaments rendez-vous sur la page \"Médicaments\" sur [\"Que faire de mes objets\"](https://quefairedemesobjets.ademe.fr/dechet/medicaments/?utm_campaign=circularoulette_enligne)",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/categories/medicaments/?utm_campaign=circularoulette_enligne)",
+      explanation: "Pour trouver la pharmacie la plus proche de chez vous pour déposer vos médicaments rendez-vous sur la page \"Médicaments\" sur [\"Que faire de mes objets\"](https://quefairedemesdechets.ademe.fr/categories/medicaments/?utm_campaign=circularoulette_enligne)",
       source: "Médicaments"
     },
     {
@@ -112,8 +112,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Je ne les emboite pas et les laisse tels quels",
       ],
       correctAnswer: [1, 3],
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/dechet/boite-en-plastique-alimentaire-emballage/?utm_campaign=circularoulette_enligne)",
-      explanation: "Il n'y a pas besoin d'emboîter, ni de tasser, ni de laver. En général il faut les déposer tels quels dans le bac, mais dans certaines collectivités il faut les mettre dans un sac (jaune translucide en général). En cas de doute sur la marche à suivre, RDV sur [Que faire de mes déchets](https://quefairedemesdechets.ademe.fr/dechet/boite-en-plastique-alimentaire-emballage/?utm_campaign=circularoulette_enligne) !",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/categories/emballages/emballages-en-plastique/?utm_campaign=circularoulette_enligne)",
+      explanation: "Il n'y a pas besoin d'emboîter, ni de tasser, ni de laver. En général il faut les déposer tels quels dans le bac, mais dans certaines collectivités il faut les mettre dans un sac (jaune translucide en général). En cas de doute sur la marche à suivre, RDV sur [Que faire de mes déchets](https://quefairedemesdechets.ademe.fr/categories/emballages/emballages-en-plastique/?utm_campaign=circularoulette_enligne) !",
       source: "Emaballages"
     }
   ],
@@ -129,8 +129,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Trouver un opticien qui permet d'acheter 4 paires pour le prix d'une",
       ],
       correctAnswer: [1, 2],
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/dechet/lunettes/?utm_campaign=circularoulette_enligne)",
-      explanation: "L'option la plus écologique est de monter de nouveaux verres sur votre monture actuelle.  \nSi la monture doit vraiment être changée, il est possible de déposer sa paire de lunettes dans une borne de collecte pour lui donner une seconde vie. \nTrouvez celle la plus proche de chez vous en renseignant votre adresse sur la [carte interactive](https://quefairedemesobjets.ademe.fr/dechet/lunettes/?utm_campaign=circularoulette_enligne) !",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/categories/lunettes/?utm_campaign=circularoulette_enligne)",
+      explanation: "L'option la plus écologique est de monter de nouveaux verres sur votre monture actuelle.  \nSi la monture doit vraiment être changée, il est possible de déposer sa paire de lunettes dans une borne de collecte pour lui donner une seconde vie. \nTrouvez celle la plus proche de chez vous en renseignant votre adresse sur la [carte interactive](https://quefairedemesdechets.ademe.fr/categories/lunettes/?utm_campaign=circularoulette_enligne) !",
       source: "Lunettes"
     },
     {
@@ -172,7 +172,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: [0, 1],
       hint: "Rendez-vous par ici !  ((lien vers [ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne) )",
-      explanation: "Recoudre ou faire recoudre permettrait de prolonger la vie du manteau et d'éviter un déchet textile supplémentaire, surtout s'il est encore en bon état. Le bonus réparation pour réparer une doublure est compris entre 10€ et 25€ ! Découvrez les réparateurs agréés qui peuvent vous faire bénéficier du bonus sur la [carte interactive](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne), ou bien trouvez la retoucherie la plus proche de chez vous [ici](https://quefairedemesdechets.ademe.fr/dechet/vetements/?utm_campaign=circularoulette_enligne)",
+      explanation: "Recoudre ou faire recoudre permettrait de prolonger la vie du manteau et d'éviter un déchet textile supplémentaire, surtout s'il est encore en bon état. Le bonus réparation pour réparer une doublure est compris entre 10€ et 25€ ! Découvrez les réparateurs agréés qui peuvent vous faire bénéficier du bonus sur la [carte interactive](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne), ou bien trouvez la retoucherie la plus proche de chez vous [ici](https://quefairedemesdechets.ademe.fr/categories/vetements/?utm_campaign=circularoulette_enligne)",
       source: "Vetement"
     },
     {
@@ -185,8 +185,8 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) 99%",
       ],
       correctAnswer: 2,
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/les-cartes-de-france-de-l%C3%A9conomie-circulaire/seconde-main/?utm_campaign=circularoulette_enligne)",
-      explanation: "Vous faites partie de cette proportion ? Pensiez-vous qu'autant de personnes achetaient d'occasion ?\nPour trouver les boutiques les plus proches de chez vous, RDV sur la [carte de la seconde main](https://quefairedemesdechets.ademe.fr/les-cartes-de-france-de-l%C3%A9conomie-circulaire/seconde-main/?utm_campaign=circularoulette_enligne).",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/les-cartes-de-france-de-leconomie-circulaire/seconde-main/?utm_campaign=circularoulette_enligne)",
+      explanation: "Vous faites partie de cette proportion ? Pensiez-vous qu'autant de personnes achetaient d'occasion ?\nPour trouver les boutiques les plus proches de chez vous, RDV sur la [carte de la seconde main](https://quefairedemesdechets.ademe.fr/les-cartes-de-france-de-leconomie-circulaire/seconde-main/?utm_campaign=circularoulette_enligne).",
       source: "Seconde main"
     },
     {
@@ -304,7 +304,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 3,
       hint: "Rendez-vous par ici ! [par ici](https://infos.ademe.fr/magazine-mai-2022/faits-et-chiffres/equipements-domestiques-comment-prolonger-leur-duree-de-vie/?utm_campaign=circularoulette_enligne)",
-      explanation: "Prolonger d'un an la durée d'usage de ses équipements plutôt que de les remplacer par du neuf permettrait d'économiser 660 € par an. Pour trouver comment prolonger la vie de ses équipements, rdv [ici](https://quefairedemesobjets.ademe.fr/?utm_campaign=circularoulette_enligne)",
+      explanation: "Prolonger d'un an la durée d'usage de ses équipements plutôt que de les remplacer par du neuf permettrait d'économiser 660 € par an. Pour trouver comment prolonger la vie de ses équipements, rdv [ici](https://quefairedemesdechets.ademe.fr/?utm_campaign=circularoulette_enligne)",
       source: "Numérique"
     },
     {
