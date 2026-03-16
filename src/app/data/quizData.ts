@@ -290,7 +290,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
       ],
       correctAnswer: 1,
       hint: "Rendez-vous par ici ! ( lien vers https://observatoire-reemploi-reutilisation.ademe.fr/comprendre-le-reemploi?utm_campaign=circularoulette_enligne )",
-      explanation: "Recyclage : récupération des matières qui composent l'objet (cela nécessite de l'énergie et de l'eau)\nRéemploi : c'est quand l'objet garde son usage et change de propriétaire\nRéparation : c'est quand l'objet est conservé par son propriétaire et réparé pour le rendre à nouveau fonctionnel \nUpcycling : une forme de recyclage ou de réutilisation qui ajoute de la valeur à l'objet et parfois le change d'usage (ex : salon de jardin en palettes) \nSi vous ne faites pas la même taille de vêtements que vos amis, vous pouvez retrouver les boutiques de seconde main autour de chez vous [ici](https://quefairedemesobjets.ademe.fr/seconde-main/?utm_campaign=circularoulette_enligne)",
+      explanation: "Recyclage : récupération des matières qui composent l'objet (cela nécessite de l'énergie et de l'eau)\nRéemploi : c'est quand l'objet garde son usage et change de propriétaire\nRéparation : c'est quand l'objet est conservé par son propriétaire et réparé pour le rendre à nouveau fonctionnel \nUpcycling : une forme de recyclage ou de réutilisation qui ajoute de la valeur à l'objet et parfois le change d'usage (ex : salon de jardin en palettes) \nSi vous ne faites pas la même taille de vêtements que vos amis, vous pouvez retrouver les boutiques de seconde main autour de chez vous [ici](https://quefairedemesdechets.ademe.fr/seconde-main/?utm_campaign=circularoulette_enligne)",
       source: "Textile"
     },
     {
@@ -359,7 +359,7 @@ export const quizDataByCategory: Record<string, Question[]> = {
         "D) Je peux appeler un professionnel et bénéficier du Bonus Réparation",
       ],
       correctAnswer: [0, 1, 2, 3],
-      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesobjets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
+      hint: "Rendez-vous par ici ! [par ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
       explanation: "Toutes les options possibles en fonction de votre niveau de \"bricolage\" et votre temps. Le plus important c'est de prendre le réflexe ! Si vous optez pour l'option \"faire réparer par un professionnel\", rdv [ici](https://quefairedemesdechets.ademe.fr/bonus-reparation/?utm_campaign=circularoulette_enligne)",
       source: "Réparation"
     },
